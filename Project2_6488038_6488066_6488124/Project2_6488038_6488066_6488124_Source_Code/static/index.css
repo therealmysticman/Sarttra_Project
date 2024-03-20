@@ -1,0 +1,329 @@
+body {
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #4b3b3b;
+}
+
+.head {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+}
+
+.wow {
+    color: white;
+    min-width: 550px;
+    min-height: 70px;
+    display: flex;
+    border-radius: 5px;
+
+}
+
+.active {
+    color: white;
+}
+
+.active:hover {
+    color: rgb(126, 2, 2);
+}
+
+.wow ul {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.wow ul a:link {
+    text-decoration: none;
+    color: white;
+
+}
+
+.wow ul li {
+    margin-right: 70px;
+    font-weight: 700;
+    list-style: none;
+    background: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.home {
+    margin-right: 10px;
+}
+
+.home h1 {
+    margin: auto;
+}
+
+.logo {
+    margin: 0px auto;
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    z-index: 5;
+}
+
+.Horror {
+    color: rgb(126, 2, 2);
+    text-shadow: 4px 4px #261d1d;
+    font-size: 62px;
+    letter-spacing: 15px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.Horror1 {
+    color: rgb(126, 2, 2);
+    text-shadow: 4px 4px #261d1d;
+    font-size: 62px;
+    letter-spacing: 15px;
+    position: absolute;
+    top: 50%;
+    right: -7%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.wow ul a:hover {
+    color: red;
+}
+
+.wow ul li:hover {
+    transform: scale(1.1);
+}
+
+.logo img {
+    width: 300px;
+}
+
+.btn {
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    backdrop-filter: blur(30px);
+    letter-spacing: 2px;
+    background: rgba(129, 129, 129, 0.223);
+    margin: 40px 40px 20px 30px;
+    border: 2px solid rgb(255, 4, 4);
+    padding: 12px 35px;
+    border-radius: 50px;
+    transition: .15 ease;
+    align-items: center;
+}
+
+.btn-pri:hover {
+    background: rgb(255, 4, 4);
+    color: black;
+}
+
+.btn1 {
+    justify-content: center;
+    display: flex;
+}
+
+#lan {
+    background: none;
+    color: wheat;
+    margin-left: 5px;
+}
+
+.line {
+    border: .3px solid rgb(255, 4, 4);
+    margin: 10px;
+    width: 0px;
+}
+
+form {
+    position: relative;
+    top: -40%;
+    left: 50%;
+    width: 500px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    box-shadow: red;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid rgb(126, 2, 2);
+    padding: 5px;
+    z-index: 5;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: block;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: darkred;
+    border:2.5px solid darkred;
+    text-align: center;
+    font-size: 1.2em;
+}
+.dis{
+    position: absolute;
+    top: 66%;
+    left: 24%;
+}
+
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    opacity: 40%;
+}
+
+.d1 {
+    position: absolute;
+    background-image: url("../static/img/1920x1200_px_Blonde_blood_children_creepy_Dark_females_girl-1604155.jpg!d");
+    height: 80vh;
+    height: 70vh;
+    width: 25vw;
+    background-position: 0 50%;
+    left: 0vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: dd1 10s 2;
+    animation-delay: 2s;
+}
+
+.d2 {
+
+    position: absolute;
+    background-image: url("../static/img/Bill_Skarsg_rd_clown_It_movie_pennywise_horror_movies_face_villain-1661107.jpg!d");
+    height: 85vh;
+    width: 20vw;
+    background-position: -10vw 50%;
+    left: 15vw;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    animation: dd2 10s 2;
+    animation-delay: 2s;
+
+}
+
+.d3 {
+    position: absolute;
+    background-image: url("../static/img/the_nun_front_angle_view_The_Nun_2018_sisters_evil_Devil_demon_Jesus_Christ-1802303.jpg!d");
+
+    height: 100vh;
+    width: 40vw;
+    left: 30vw;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    background-position: -35vw 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: dd3 10s 2;
+    animation-delay: 2s;
+    z-index: 4;
+}
+
+.d4 {
+    position: absolute;
+    overflow: hidden;
+    background-image: url("../static/img/Slasher_Killer_horror_Horror_movies_Child\'s_Play_Chucky_doll_eyes-1974761.jpg!d");
+    height: 85vh;
+    width: 20vw;
+    left: 65vw;
+    background-position: -70vw 50%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+
+    top: 50%;
+    transform: translateY(-50%);
+    animation: dd4 10s 2;
+    animation-delay: 2s;
+    z-index: 3;
+}
+
+.d5 {
+    position: absolute;
+    overflow: hidden;
+    background-image: url("../static/img/Five_Nights_at_Freddy\'s_Freddy_Fazbear_Bonnie_FNAF_Chica_FNAF_Foxy_FNAF_movie_characters_Horror_movies-2285078.jpg!d");
+    height: 70vh;
+    width: 25vw;
+    left: 80vw;
+    background-position: -100vw 50%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    animation: dd5 10s 2;
+    animation-delay: 2s;
+    z-index: 2;
+}
+
+
+@keyframes dd1 {
+    0% {}
+
+    50% {
+        background-position: Calc(0vw - 40px) 50%;
+    }
+}
+
+@keyframes dd2 {
+    0% {}
+
+    50% {
+        background-position: Calc(-15vw - 40px) 50%;
+    }
+}
+
+@keyframes dd3 {
+    0% {}
+
+    50% {
+        background-position: Calc(-20vw - 70px) 50%;
+
+    }
+}
+
+@keyframes dd4 {
+    0% {}
+
+    50% {
+        background-position: Calc(-60vw - 50px) 50%;
+    }
+}
+
+@keyframes dd5 {
+    0% {}
+
+    50% {
+        background-position: Calc(-40vw - 100px) 50%;
+    }
+}
