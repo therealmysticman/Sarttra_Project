@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Agbalumo' rel='stylesheet'>
+    <title>Milo</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    input,
+    textarea {
+        outline: none;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    form {
+        position: relative;
+        width: 30%;
+        height: 40%;
+        border-radius: 30px;
+        background: #fff;
+    }
+
+    .formdis {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .form-inner {
+        padding: 40px;
+    }
+
+    .form-inner input,
+    .form-inner textarea {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 20px;
+        background: #d0dfe8;
+    }
+
+    .form-inner textarea {
+        resize: none;
+    }
+
+    button {
+        margin-top: 20px;
+        color: white;
+        background-color: #4d92e1;
+        width: 120px;
+        height: 50px;
+        border-radius: 30px;
+        border: 2px solid rgb(21, 96, 177);
+    }
+
+    button:hover {
+        color: rgb(175, 145, 67);
+        background-color: rgb(255, 234, 173);
+        border: 2px solid rgb(175, 145, 67);
+        cursor: pointer;
+    }
+</style>
+<script type="application/javascript">
+    /* ----- Your JS code is here -----  */
+
+    function generateMsg() {
+        /* 1. Hide <div>: div_form */
+        const formDiv = document.getElementById("div_form");
+        formDiv.style.display = "none";
+
+
+        const name = document.getElementById('txtUsername').value;
+        const email = document.getElementById('txtEmail').value;
+        const message = document.getElementById('txtMessages').value;
+
+        // Check if required fields are empty
+        if (!name || !email || !message) {
+            alert('Please fill in all required fields.');
+            window.location.href = '/request'; // Exit the function if any required field is empty
+        }
+
+        // Create a variable for the button
+        const backButton = document.createElement('button');
+        backButton.textContent = 'Back';
+
+        // Set the onclick event to navigate to "/reghome"
+        backButton.onclick = function () {
+            window.location.href = '/reghome';
+        };
+
+        // Create a variable for the flex container
+        const boxDisplay = document.createElement('div');
+        boxDisplay.className = 'boxdisplay';
+        boxDisplay.style.display = 'flex';
+        boxDisplay.style.justifyContent = 'center';
+
+        // Append the button to the flex container
+        boxDisplay.appendChild(backButton);
+
+        /* 3. Show the generated message in the <div> "div_thk"*/
+        let title = document.getElementById('h1_title');
+        title.textContent = "Your Adoption Request is proceeding...";
+        const thank = document.getElementById('div_thk');
+        thank.innerText = `
+      Dear ${name}, 
+      Thank you for your Adoption Request. 
+      ------------------------
+      ${message}
+      ------------------------
+      We will contact you via ${email}
+      within 2 business days
+
+      Thank you for your services and patience!
+      Dog Adoption Staff
+            `;
+
+        // Append the boxDisplay to the "div_thk" div
+        thank.appendChild(boxDisplay);
+
+        // Display the "div_thk" div
+        thank.style.display = "block";
+
+
+    }
+
+    function Backward() {
+        // Get the URL of the referring page
+        const referringPage = document.referrer;
+
+        // Check if the referring page contains "/milo" or "/namtarn"
+        if (referringPage.includes('/milo')) {
+            // If the referring page is from "/milo", navigate back to "/milo"
+            window.location.href = '/milo';
+        } else {
+            // If the referring page is from "/namtarn", navigate back to "/namtarn"
+            window.location.href = '/namtarn';
+    }
+}
+
+    /* ==========  Activity 4 ends here  ========== */
+</script>
+
+</style>
+
+<body>
+    <header>
+        <a href="/"><img src="dog_pic/paw-print-.png" width="100" height="100"></a>
+        <nav id="navbar">
+            <div class="head">
+                <ul>
+                    <li><a href="/reghome" class="midfont headnav">Home</a></li>
+                    <li><a href="/product" class="midfont headnav">Dogs</a></li>
+                    <li><a href="/search" class="midfont headnav">Search</a></li>
+                    <li>
+                        <img class="homedog" src="dog_pic/superuser.png" alt="headfood" width="30" height="30"
+                            style="padding-right: 5px;">
+                        <a href="/reghome" class="midfont headnav" style="padding-left: 0px;">Dashboard</a>
+                    </li>
+                    <li><a href="/" class="midfont headnav">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="formdis">
+        <form action="/" class="decor">
+            <div class="form-inner">
+                <h1 id="h1_title">Adoption Request</h1>
+                <div id="div_thk">
+                </div>
+                <div id="div_form">
+                    <input type="text" placeholder="Yourname" id="txtUsername" required>
+                    <input type="email" placeholder="Email" id="txtEmail" required>
+                    <textarea placeholder="Request Message" rows="3" id="txtMessages" required></textarea>
+                    <div class="boxdisplay" style="justify-content: center;">
+                        <button type="button" style="margin: 5px" onclick="generateMsg()">Submit</button>
+                        <button type="button" style="margin: 5px"onclick="Backward()">Back</button></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer style="padding-bottom: 30px;">
+        <nav>
+            <ul>
+                <li><a href="/reghome" class="footnav">Home</a></li>
+                <li><a href="/dog" class="footnav">Dogs</a></li>
+                <li><a href="" class="footnav">Services</a></li>
+                <li><a href="" class="footnav">Contact</a></li>
+                <li><a href="" class="footnav">About us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+
+</html>

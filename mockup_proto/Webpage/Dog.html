@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Agbalumo' rel='stylesheet'>
+    <title>Product</title>
+</head>
+<!--have to modify style in here since bugging issues in style.css-->
+<style>
+    p,
+    h4 {
+        line-height: 0.6em;
+    }
+
+    h3 {
+        line-height: 1.2em;
+    }
+
+    h1.foodselection {
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: #24805A;
+    }
+
+    h1.foodselection1 {
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: white;
+        margin-top: 0px;
+    }
+
+    a.more {
+        text-decoration: none;
+        font-size: 24px;
+        font-style: italic;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: black;
+    }
+
+    a.more:hover {
+        color: #24805A
+    }
+
+    .searchbar {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    button {
+        width: 100px;
+        height: 70px;
+        border-radius: 50px;
+        margin-left: 20px;
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 3px solid white;
+        color: white;
+    }
+
+    button:hover {
+        color: #ffc92e;
+        border-color: #ffc92e;
+    }
+
+    input.input1 {
+        width: 520px;
+        height: 70px;
+        background-color: transparent;
+        border: 3px solid white;
+        color: white;
+        padding: 10px 6px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        border-radius: 50px;
+        padding: 10px 20px;
+    }
+
+    input.input1:focus {
+        outline: none;
+    }
+
+    select:focus {
+        outline: none;
+    }
+
+    .box {
+        height: 420px;
+        width: 300px;
+        margin: 20px;
+        box-sizing: inherit;
+        border: 3.8px solid #008356;
+        background-color: #F5FFE7;
+        border-radius: 40px 0px 0px 0px;
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    input[type="search"]::placeholder {
+        color: white;
+    }
+
+    .doglist {
+    height: 240px;
+    width: 200px;
+    margin: 20px;
+    box-sizing: inherit;
+    border-radius: 40px;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 20px;
+    border: 3px solid rgba(21, 97, 179, 0);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* Add shadow here */
+    }
+    
+    .doglist2 {
+    height: 230px;
+    width: 200px;
+    margin: 20px;
+    box-sizing: inherit;
+    border-radius: 40px;
+    background-color: #1560b1;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 20px;
+    border: 3px solid rgba(21, 97, 179, 0);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* Add shadow here */
+    }
+    
+    
+    .doglist:hover{
+        border:3px solid #1560b1;
+    }
+
+    .doglist2:hover{
+        border:3px solid white;
+    }
+
+   
+
+    section.searchpart {
+        background-color: rgb(21, 96, 177);
+        height: 300px;
+    }
+
+    select {
+        background: transparent;
+        color: white;
+        border: 3px solid white;
+        width: 160px;
+        height: 60px;
+        border-radius: 50px;
+        margin-left: 20px;
+    }
+
+    .custom-select {
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+
+    option.dropdown {
+        background-color: #ffc92e;
+        color: black;
+    }
+    h3.recommend {
+        font-size: 26px;
+        font-weight: 400;
+        color: #1560b1;
+    }
+
+    h3.recommend2 {
+        font-size: 26px;
+        font-weight: 400;
+        color: rgba(88, 184, 214, 1);
+    }
+
+    h1.dogtopic {
+        gap: 90px;
+        padding-top: 80px;
+        font-size: 100px;
+        margin: 0px;
+        color: white;
+        text-shadow: 4px 4px black;
+        margin-top: 0;
+    }
+    img.homedog {
+        vertical-align: middle;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+</style>
+
+
+<body>
+    <header>
+        <a href="/"><img src="dog_pic/paw-print-.png" width="100" height="100"></a>
+        <nav id="navbar">
+            <div class="head">
+                <ul>
+                    <li><a href="/reghome" class="midfont headnav">Home</a></li>
+                    <li><a href="/dog" class="midfont headnav">Dogs</a></li>
+                    <li><a href="/dog" class="midfont headnav">Search</a></li>
+                    <li>
+                        <img class="homedog" src="dog_pic/superuser.png" alt="headfood" width="30" height="30"
+                            style="padding-right: 5px;">
+                        <a href="/reghome" class="midfont headnav" style="padding-left: 0px;">Dashboard</a>
+                    </li>
+                    <li><a href="/" class="midfont headnav">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="fade-in-text">
+        <form id="search-form">
+            <section class="searchpart" id="search">
+                <h1 class="foodselection1" style="font-size: 40px; color: #ffc92e;">
+                    Explore you desired partner!
+                </h1>
+                <div class="searchbar">
+                    <input class="input1" type="search" id="search-input" placeholder="Search" />
+                    <button type="submit">Search</button>
+                </div>
+            </section>
+        </form>
+    </div>
+    <div class="fade-in-text">
+        <h1 class="selection" style="color: rgb(21, 96, 177); font-size: 40px;">-All Dog in here!-</h1>
+        <h1 class="selection" style="color: rgb(21, 96, 177); font-size: 30px; padding-top: 5px;">Feels free to select your partner</h1>
+        <article class="container1">
+            <div class="doglist">
+                <a chref="/dog1"><img src="dog_pic/chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg"
+                        width="250" height="180" style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Shelby</h3>
+            </div>
+            <div class="doglist">
+                <a href="/milo"><img src="dog_pic/1655430860853.jpeg" width="210" height="180"
+                        style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Milo</h3>
+            </div>
+            <div class="doglist">
+                <a href="/product003"><img src="dog_pic/Golden-Retriever-puppy-peeing-outdoors-in-the-grass-400x267.jpg"
+                        width="210" height="180" style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Fufu</h3>
+            </div>
+            <div class="doglist">
+                <a href="/namtarn"><img src="dog_pic/Pembroke-Welsh-Corgi-Leaping-in-the-Field.jpg" width="210"
+                        height="180" style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Nam-Tarn</h3>
+            </div>
+            <div class="doglist">
+                <a href="/product003"><img src="dog_pic/colors-of-siberian-huskies.png" width="210" height="180"
+                        style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Snow</h3>
+            </div>
+        </article>
+        <article class="container1" style="padding-bottom: 50px;">
+            <div class="doglist">
+                <a href="/product003"><img src="dog_pic/dog-running-through-autumn-leaves.jpg" width="210"
+                        height="180" style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Ricky</h3>
+            </div>
+            <div class="doglist">
+                <a href="/product003"><img src="dog_pic/neapolitan-mastiff-with-woman-on-leash-2-77685259-2000-81fba6fbcb8244d2adb24e31cc082c78.jpg" width="210" height="180"
+                        style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Sri-Nin</h3>
+            </div>
+            <div class="doglist">
+                <a href="/product003"><img src="dog_pic/Afghan-Hound-standing-in-a-garden-400x267.jpg" width="210" height="180"
+                        style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Miles</h3>
+            </div>
+            <div class="doglist">
+                <a href="/product003"><img src="dog_pic/boston-terrier-detail.jpg" width="210" height="180"
+                        style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Iggy</h3>
+            </div>
+            <div class="doglist">
+                <a href="/product003"><img src="dog_pic/russian-toy-2-3-_custom-fd300880a9643efca73031d33f38ca7f4054b710.jpg"
+                        width="210" height="180" style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Sam</h3>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/reghome" class="footnav">Home</a></li>
+                <li><a href="/dog" class="footnav">Dogs</a></li>
+                <li><a href="" class="footnav">Services</a></li>
+                <li><a href="" class="footnav">Contact</a></li>
+                <li><a href="" class="footnav">About us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    </script>
+
+</body>
+
+</html>

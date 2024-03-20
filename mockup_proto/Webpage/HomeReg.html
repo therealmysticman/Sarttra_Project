@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Agbalumo' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<style>
+    .facilitybox {
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+        box-sizing: inherit;
+        background-color: #4d92e1;
+        border-radius: 40px 40px 40px 40px;
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    .doglist {
+        height: 240px;
+        width: 200px;
+        margin: 20px;
+        box-sizing: inherit;
+        border-radius: 40px;
+        background-color: white;
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 20px;
+        border: 3px solid rgba(21, 97, 179, 0);
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+        /* Add shadow here */
+    }
+
+    .doglist2 {
+        height: 230px;
+        width: 200px;
+        margin: 20px;
+        box-sizing: inherit;
+        border-radius: 40px;
+        background-color: #1560b1;
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 20px;
+        border: 3px solid rgba(21, 97, 179, 0);
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+        /* Add shadow here */
+    }
+
+
+    .doglist:hover {
+        border: 3px solid #1560b1;
+    }
+
+    .doglist2:hover {
+        border: 3px solid white;
+    }
+
+
+    h3.recommend {
+        font-size: 26px;
+        font-weight: 400;
+        color: #1560b1;
+    }
+
+    h3.recommend2 {
+        font-size: 26px;
+        font-weight: 400;
+        color: rgba(88, 184, 214, 1);
+    }
+
+    h1.dogtopic {
+        gap: 90px;
+        padding-top: 80px;
+        font-size: 100px;
+        margin: 0px;
+        color: white;
+        text-shadow: 4px 4px black;
+        margin-top: 0;
+    }
+
+    img.homedog {
+        vertical-align: middle;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="/"><img src="dog_pic/paw-print-.png" width="100" height="100"></a>
+        <nav id="navbar">
+            <div class="head">
+                <ul>
+                    <li><a href="/reghome" class="midfont headnav">Home</a></li>
+                    <li><a href="/dog" class="midfont headnav">Dogs</a></li>
+                    <li><a href="/search" class="midfont headnav">Search</a></li>
+                    <li>
+                        <img class="homedog" src="dog_pic/superuser.png" alt="headfood" width="30" height="30"
+                            style="padding-right: 5px;">
+                        <a href="/reghome" class="midfont headnav" style="padding-left: 0px;">Dashboard</a>
+                    </li>
+                    <li><a href="/" class="midfont headnav">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="dogpic">
+        <div class="dogheader">
+            <h1 class="dogtopic">Dog Adoption Website</h1>
+            <h3 style="margin-top: 1px; text-shadow: 3px 3px black;">Welcome! these dogs always need to be in your care
+            </h3>
+        </div>
+    </div>
+    <div class="fade-in-image">
+        <h1 class="selection" style="color: rgb(21, 96, 177);">-Facilities-</h1>
+        <article class="container1">
+
+            <div class="facilitybox">
+                <a href="/dog"><img src="dog_pic/dog.png" width="100" height="100"
+                        style="object-fit: cover;padding-top: 20px;"></a>
+                <h3 class="recommend" style="color: white;">Adopt</h3>
+            </div>
+
+            <div class="facilitybox" style="background-color: rgb(255, 234, 173);">
+                <a href=""><img src="dog_pic/care.png" width="100" height="100" style="padding-top: 20px;"
+                        style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: rgb(83, 145, 222);">Community</h3>
+            </div>
+
+            <div class="facilitybox">
+                <a href=""><img src="dog_pic/people.png" width="100" height="100" style="padding-top: 20px;"
+                        style="object-fit: cover;padding-top: 20px;"></a>
+                <h3 class="recommend" style="color: white;margin-top: 2px;">Our Organization</h3>
+            </div>
+
+            <div class="facilitybox" style="background-color: rgb(255, 234, 173);">
+                <a href=""><img src="dog_pic/deal.png" width="100" height="100" style="padding-top: 20px;"
+                        style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: rgb(83, 145, 222);">Sponsors</h3>
+            </div>
+
+            <div class="facilitybox">
+                <a href=""><img src="dog_pic/qa.png" width="100" height="100" style="padding-top: 20px;"
+                        style="object-fit: cover;padding-top: 20px;"></a>
+                <h3 class="recommend" style="color: white;">Q&A</h3>
+            </div>
+
+        </article>
+    </div>
+    <div class="fade-in-text">
+        <h1 class="selection" style="color: rgb(21, 96, 177);">-Recommend Dog-</h1>
+
+        <article class="container1">
+            <div class="doglist">
+                <a chref=""><img src="dog_pic/chinese-dog-breeds-4797219-hero-2a1e9c5ed2c54d00aef75b05c5db399c.jpg"
+                        width="250" height="180" style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Shelby</h3>
+            </div>
+            <div class="doglist">
+                <a href="/milo"><img src="dog_pic/1655430860853.jpeg" width="210" height="180"
+                        style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Milo</h3>
+            </div>
+            <div class="doglist">
+                <a href=""><img src="dog_pic/Golden-Retriever-puppy-peeing-outdoors-in-the-grass-400x267.jpg"
+                        width="210" height="180" style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Fufu</h3>
+            </div>
+        </article>
+        <article class="container1" style="padding-bottom: 50px;">
+            <div class="doglist">
+                <a href="/namtarn"><img src="dog_pic/Pembroke-Welsh-Corgi-Leaping-in-the-Field.jpg" width="210"
+                        height="180" style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Nam-Tarn</h3>
+            </div>
+            <div class="doglist">
+                <a href=""><img src="dog_pic/colors-of-siberian-huskies.png" width="210" height="180"
+                        style="object-fit: cover;"></a>
+                <h3 class="recommend" style="color: #1560b1;margin-top: 0px;">Snow</h3>
+            </div>
+            <div class="doglist2">
+                <a href="/dog"><img src="dog_pic/super_dog.png" width="100" height="100" style="padding-top: 50px;"
+                        style="object-fit: cover;"></a>
+                <h3 class="recommend"><a href="Dog.html" style="text-decoration: none; color: white;">Other</a></h3>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/" class="footnav">Home</a></li>
+                <li><a href="/product" class="footnav">Dogs</a></li>
+                <li><a href="" class="footnav">Services</a></li>
+                <li><a href="" class="footnav">Contact</a></li>
+                <li><a href="" class="footnav">About us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+*{
+  font-family: 'Agbalumo';
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.fade-in-image { 
+  animation: fadeIn 2s; 
+}
+.fade-in-text {
+  animation: fadeIn 1.5s; 
+}
+header, footer{
+        text-align: center;
+}
+header{
+  background: rgb(88,184,214);
+  background: linear-gradient(180deg, rgba(88,184,214,1) 0%, rgba(69,134,207,1) 100%);
+  height: 200px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+}
+.dogheader {
+  background-color: rgba(10, 38, 71, 0.65);
+  height: 370px;
+}
+.dogpic{
+  background: url(dog_pic/dog_banner.jpg);
+  height: 370px;
+  text-align: center;
+  background-size: contain;
+  overflow: hidden;
+}
+
+body{
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+nav ul li {
+display: inline-block
+}
+ .head{
+    background: rgb(255, 217, 103);
+    border-bottom:none;
+    text-align: center;
+    height: 80px;
+    width: 60%; 
+    margin: 0 auto;
+    padding-bottom: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+nav ul li a.headnav{
+    text-decoration: none;
+    padding: 0px 30px;
+    color:white; 
+  }
+  nav ul li a.headnav:hover{
+    color:rgb(175, 145, 67);
+  }
+  nav ul li a.footnav{
+    text-decoration: none;
+    padding: 30px 20px;
+    color: black;
+  }
+
+a.big-font {
+font-size: 46px;
+font-weight: bold;
+margin-right: 20px;
+}
+a.midfont {
+font-size: 30px;
+padding: 20px;
+line-height: 80px;
+}
+body{
+  background: rgb(204,228,246);
+  background: linear-gradient(180deg, rgba(204,228,246,1) 0%, rgba(242,251,255,1) 100%);
+}
+
+footer {
+    background-color: rgba(88,184,214,1);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    min-height: 7%;
+    width: 100%;        
+  }
+.box{
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+    box-sizing: inherit;
+    border: 4px solid #009B34 ;
+    background-color: #F5FFE7 ;
+    border-radius: 40px 0px 0px 0px;
+    text-align: center;
+    overflow: hidden;
+}
+.boxabout{
+  height: 450px;
+  width: 320px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 20px;
+  box-sizing: inherit;
+  border: 4px solid #009B34 ;
+  background: rgb(160,255,153);
+background: linear-gradient(0deg, rgba(160,255,153,1) 0%, rgba(103,233,188,1) 100%);
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.container1 {
+  padding-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.2s; 
+
+}
+.containerabout {
+  padding-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.2s; 
+
+}
+.description{
+  display: block;
+  position:relative;
+  
+}
+article.dogdesc{
+  padding-left: 20px;
+}
+h4{
+  font-weight: 500;
+}
+h3{
+    font-size: 40px;
+    color: white;
+}
+h2{
+  font-weight: 200;
+}
+h1{
+  font-size: 36px;
+  color: #232529;
+}
+h1.selection{
+  font-size: 32px;
+  text-align: center;
+  padding-top: 20px;
+  color: #009B34;
+}
+fieldset.fieldset1{
+  top: 50%;
+  left: 50%;
+  margin-top: 100px;
+  margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 235px;
+  min-width: 320px;
+  max-width: 412px;
+  width: 338px;
+  border: 3px solid #4d92e1 ;
+  border-radius: 20px;
+  background-color: rgb(255, 234, 173);
+  height: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+fieldset.fieldset2{
+  margin-top: 30px;
+  margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 745px;
+  border-radius: 20px;
+  border: 0.5px solid transparent;
+  background: rgb(88,184,214);
+  background: linear-gradient(180deg, rgba(88,184,214,1) 0%, rgba(69,134,207,1) 100%);
+  height: auto;
+  padding: 30px;
+}
+fieldset.fieldset3{
+  width: 530px;
+  height: 530px;
+  border: 3.5px solid #4d92e1 ;
+  border-radius: 40px;
+  background-color: rgb(255, 234, 173);
+  padding: 20px;
+}
+fieldset.fieldset4{
+  width: 800px;
+  height: 450px;
+  border: 3.5px solid #4d92e1 ;
+  border-radius: 40px;
+  background-color: rgb(255, 234, 173);
+  padding: 20px;
+  padding-bottom: 100px;
+}
+.dogdescbox{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.boxdisplay{
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  margin: 0px auto;
+}
+.formfield {
+  display: flex;
+}
+legend{
+  font-size: 40px;
+}
+label{
+  width: 90px;
+  padding: 10px;
+  display: inline-block;
+  color: white;
+}
+.memberdesc{
+  width: 100%;
+  text-align:center;
+  line-height: 1.5em;
+  margin-bottom: 40px;
+}
+input.input1{
+  width: 300px;
+  height: 20px;
+  padding: 10px 6px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+input.input2{
+    width: 150px;
+    height: 20px;
+    padding: 10px 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.dogdescription{
+  font-size: 20px;
+}
+img.dog{
+  object-fit: cover;
+  background-size: contain;
+  overflow: hidden;
+  border-radius: 40px;
+}
+img.imglogin{
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0px auto;
+}
+button.reg{
+  width: 100px;
+}
+button.req{
+  color: white;
+  background-color: #4d92e1;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  border: 2px solid rgb(21, 96, 177);
+}
+button.req:hover{
+  color: rgb(175, 145, 67);
+  background-color: rgb(255, 234, 173);
+  border: 2px solid rgb(175, 145, 67);
+  cursor: pointer;
+}
+button.two{
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.newbody{
+  background: rgb(231,255,194);
+background: linear-gradient(90deg, rgba(231,255,194,1) 0%, rgba(178,246,190,0.9842105263157894) 53%, rgba(168,233,181,1) 100%, rgba(98,222,181,1) 100%);
+}
+
+#navbar-after-login {
+  display: none;
+}
