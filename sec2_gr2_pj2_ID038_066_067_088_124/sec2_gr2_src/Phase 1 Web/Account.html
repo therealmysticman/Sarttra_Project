@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- Account Management-->
+<!-- userID, username, password, last_name, mid_name(optional), first_name, address, tel, email -->
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Dangrek' rel='stylesheet'>
+    <title>User Account Management</title>
+</head>
+<style>
+    button.manage {
+        width: 100px;
+    }
+
+    .buttonrow {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    button.two {
+        border-radius: 50%;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    fieldset.fieldset3 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        border: 3px solid #36a27d;
+        border-radius: 20px;
+        background-color: #FAFFED;
+        height: auto;
+        padding: 20px;
+        padding-top: 30px;
+    }
+
+    input.input1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    input.input2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .titleacc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-right: 50px;
+    }
+
+    .formbox {
+        padding-top: 20px;
+    }
+
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid;
+    margin: auto; /* center the table */
+  }
+  th, td {
+    border: 2px solid #36a27d;
+    padding: 5px;
+    background-color:#FAFFED;
+    text-align: center;
+  }
+  th{
+    background-color: #b8dcc3;
+  }
+  .searchbar {
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
+<script src="/login.js"></script>
+<div class="fade-in-image">
+
+    <body class="newbody">
+        <header>
+            <a href="/"><img src="Phase1_pic/IGD-removebg-preview.png" width="100" height="100"></a>
+            <nav id="navbar">
+                <div class="head">
+                    <ul>
+                        <li><a href="/" class="midfont headnav">Home</a></li>
+                        <li><a href="/product" class="midfont headnav">Product</a></li>
+                        <li><a href="/search" class="midfont headnav">Search</a></li>
+                        <li><a href="/login" class="midfont headnav">Login</a></li>
+                        <li><a href="/register" class="midfont headnav">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <fieldset class="fieldset3">
+            <legend style="font-weight: 400;">Account Management</legend>
+
+            <form>
+                <div class="titleacc">
+                    <img class="homefood" src="Phase1_pic/IGD-removebg-preview.png" alt="headfood" width="120"
+                        height="120">
+                    <h1 class="foodtopic" style="color:#32B259;">IGD's Administrator</h1>
+                </div>
+                <div class="formbox">
+                    <div class="searchbar">
+                        <input class="input1" style="height: 30px;" type="search" id="search" placeholder="Search">
+                        <button style=" border: radius 20px;width: 100px;"type="submit" id="search">Search</button>
+                    </div>
+                    <div class="buttonrow">
+                        <button class="manage two" type="submit"><a href=""
+                                style="text-decoration: none;color: black;">Add</a></button>
+                        <button class="manage two" type="clear"><a href=""
+                                style="text-decoration: none;color: black;">Delete</a></button>
+                        <button class="manage two" type="reset"><a href=""
+                                style="text-decoration: none;color: black;">Clear</a></button>
+                        <button id="fetch-data-button" class="manage two" type="button" 
+                                style="text-decoration: none;color: black;">Update</button>
+                    </div>
+                    <table>
+                        <tr>
+                          <th>ID</th>
+                          <th>Username</th>
+                          <th>Password</th>
+                          <th>Role</th>
+                          <th>Modification</th>
+                        </tr>
+                      <tbody>
+                        <tr>
+                            <td>6488038</td>
+                            <td>Kanyaveeza</td>
+                            <td>2468102</td>
+                            <td>Web developer</td>
+                            <td><a href="">edit</a></td>
+                          </tr>
+                          <tr>
+                            <td>6488066</td>
+                            <td>AradaAbsent</td>
+                            <td>6600660066</td>
+                            <td>Web designer</td>
+                            <td><a href="">edit</a></td>
+                          </tr>
+                          <tr>
+                            <td>6488067</td>
+                            <td>TanawatNamTaaKabao</td>
+                            <td>666999666</td>
+                            <td>Web developer</td>
+                            <td><a href="">edit</a></td>
+                          </tr>
+                          <tr>
+                            <td>6488088</td>
+                            <td>IttikornSukPaiLaeu</td>
+                            <td>8800880088</td>
+                            <td>Web developer</td>
+                            <td><a href="">edit</a></td>
+                          </tr>
+                          <tr>
+                            <td>6488124</td>
+                            <td>SarttraYipPree</td>
+                            <td>2002Eulb!</td>
+                            <td>Web developer</td>
+                            <td><a href="">edit</a></td>
+                          </tr>
+                          <tr>
+                            <td>6666666</td>
+                            <td>KirinAha</td>
+                            <td>11100111</td>
+                            <td>Mascot</td>
+                            <td><a href="">edit</a></td>
+                          </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </form>
+            <br>
+        </fieldset>
+    
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="/" class="footnav">Home</a></li>
+                    <li><a href="/product" class="footnav">Product</a></li>
+                    <li><a href="" class="footnav">Services</a></li>
+                    <li><a href="/accountmanage" class="footnav">Account Management</a></li>
+                    <li><a href="/productmanage" class="footnav">Product Management</a></li>
+                    <li><a href="" class="footnav">Policy</a></li>
+                    <li><a href="/aboutus" class="footnav">About us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</div>
+
+</html>

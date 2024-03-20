@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html leng="en">
+
+<head>
+    <title>
+        Product Management
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Dangrek' rel='stylesheet'>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        fieldset {
+            border-radius: 20px;
+            border: 3px solid green;
+            width: 700px;
+            height: auto;
+            margin: auto;
+        }
+
+        button {
+            width: 100px;
+        }
+
+        label {
+            width: 150px;
+            display: inline-block;
+        }
+
+        input.input1 {
+            width: 200px;
+            height: 30px;
+            padding: 10px 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            padding-bottom: 20px;
+            margin-bottom: 15px;
+            width: 562px;
+        }
+
+        .buttonrow {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        .titleprod{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5px;
+        padding-bottom: 40px;
+        padding-right: 50px;
+    }
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid;
+    margin: auto; /* center the table */
+  }
+  th, td {
+    border: 2px solid #36a27d;
+    padding: 5px;
+    background-color:#FAFFED;
+    text-align: center;
+  }
+  th{
+    background-color: #b8dcc3;
+  }
+  .searchbar {
+        text-align: center;
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<script src="/login.js"></script>
+<div class="fade-in-image">
+
+    <body class="newbody">
+        <header>
+
+            <a href="/"><img src="Phase1_pic/IGD-removebg-preview.png" width="100" height="100"></a>
+
+            <nav id="navbar"><!-- Navigation tabs/Menu bars -->
+                <div class="head">
+                    <ul>
+                        <li><a href="/" class="midfont headnav">Home</a></li>
+                        <li><a href="/product" class="midfont headnav">Product</a></li>
+                        <li><a href="/search" class="midfont headnav">Search</a></li>
+                        <li><a href="/login" class="midfont headnav">Login</a></li>
+                        <li><a href="/register" class="midfont headnav">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <form action="" method="post">
+            <fieldset class="fieldset3"style="background-color:#FAFFED;">
+                <legend>Product Management</legend>
+                <br>
+                <div class="titleprod">
+                    <img class="homefood" src="Phase1_pic/IGD-removebg-preview.png" alt="headfood" width="120"
+                        height="120">
+                    <h1 class="foodtopic" style="color:#32B259;">IGD's Administrator</h1>
+                </div>
+                <div class="searchbar">
+                    <input class="input1" style="height: 30px;" type="search" id="search" placeholder="Search">
+                    <button style=" border: radius 20px;width: 100px;"type="submit" id="search">Search</button>
+                </div>
+                <div class="buttonrow">
+                    <button class="manage two" type="submit"><a href=""
+                            style="text-decoration: none;color: black;">Add</a></button>
+                    <button class="manage two" type="clear"><a href=""
+                            style="text-decoration: none;color: black;">Delete</a></button>
+                    <button class="manage two" type="reset"><a href=""
+                            style="text-decoration: none;color: black;">Clear</a></button>
+                    <button id="fetch-data-button" class="manage two" type="button" 
+                            style="text-decoration: none;color: black;">Update</button>
+                </div>
+                <table>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Nutrition</th>
+                      <th>Factor</th>
+                      <th>Modification</th>
+                    </tr>
+                  <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Grilled sea bass with miso sauce</td>
+                        <td>Main dish</td>
+                        <td>Protein</td>
+                        <td>None</td>
+                        <td><a href="">edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>002</td>
+                        <td>Clear soup with omlete</td>
+                        <td>Appertizer</td>
+                        <td>Starch</td>
+                        <td>Low calories</td>
+                        <td><a href="">edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>003</td>
+                        <td>Spicy mixed vegetable soup</td>
+                        <td>Main dish</td>
+                        <td>Fruit and vegetable</td>
+                        <td>Low calories</td>
+                        <td><a href="">edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>004</td>
+                        <td>Boiled rice with grouper</td>
+                        <td>Appertizer</td>
+                        <td>Protein</td>
+                        <td>Low calories</td>
+                        <td><a href="">edit</a></td>
+                      </tr>
+                      <tr>
+                        <td>005</td>
+                        <td>Spicy chicken soup with mushroom</td>
+                        <td>Appertizer</td>
+                        <td>Protein</td>
+                        <td>Low calories</td>
+                        <td><a href="">edit</a></td>
+                      </tr>
+                  </tbody>
+                </table>
+            </fieldset>
+            <br>
+        </form>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="/" class="footnav">Home</a></li>
+                    <li><a href="/product" class="footnav">Product</a></li>
+                    <li><a href="" class="footnav">Services</a></li>
+                    <li><a href="/accountmanage" class="footnav">Account Management</a></li>
+                    <li><a href="/productmanage" class="footnav">Product Management</a></li>
+                    <li><a href="" class="footnav">Policy</a></li>
+                    <li><a href="/aboutus" class="footnav">About us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

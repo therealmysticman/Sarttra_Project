@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Dangrek' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<style>
+    body {
+        background: rgb(226, 250, 230);
+        background: linear-gradient(0deg, rgba(226, 250, 230, 1) 0%, rgba(226, 233, 231, 1) 100%);
+    }
+
+    body::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(Phase1_pic/top-bottom-border-made-with-vegetables-white-background.jpg);
+        opacity: 0.3;
+        background-size: cover;
+    }
+
+    .box2 {
+        height: 360px;
+        width: 280px;
+        margin: 20px;
+        box-sizing: inherit;
+        border: 4px solid #008356;
+        background-color: #F5FFE7;
+        border-radius: 40px 0px 0px 0px;
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    a.more {
+        text-decoration: none;
+        font-size: 24px;
+        font-style: italic;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: black;
+    }
+
+    footer {
+        background: rgb(167, 255, 153);
+        background: linear-gradient(90deg, rgba(167, 255, 153, 1) 0%, rgba(95, 224, 107, 1) 0%, rgba(0, 168, 73, 1) 100%);
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        min-height: 4%;
+        width: 100%;
+    }
+
+    h3.recommend {
+        font-size: 20px;
+        font-weight: 400;
+        color: #232529;
+    }
+
+    .foodheader {
+        background: #008356;
+        background-image: url(Phase1_pic/pngimg.com\ -\ pasta_PNG15.png);
+        background-repeat: no-repeat;
+        background-position: 1200px 250px;
+        background-size: contain;
+        height: 420px;
+        overflow: hidden;
+    }
+
+    .titlehome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        padding-right: 50px;
+    }
+
+    h1.foodtopic {
+        font-size: 100px;
+        margin: 0px;
+    }
+
+    img.homefood {
+        vertical-align: middle;
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="/"><img src="Phase1_pic/IGD-removebg-preview.png" width="100" height="100"></a>
+        <nav id="navbar">
+            <div class="head">
+                <ul>
+                    <li><a href="/" class="midfont headnav">Home</a></li>
+                    <li><a href="/product" class="midfont headnav">Product</a></li>
+                    <li><a href="/search" class="midfont headnav">Search</a></li>
+                    <li><a href="/login" class="midfont headnav">Login</a></li>
+                    <li><a href="/register" class="midfont headnav">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="foodheader">
+        <div class="titlehome">
+            <img class="homefood" src="Phase1_pic/IGD-removebg-preview.png" alt="headfood" width="200" height="200">
+            <h1 class="foodtopic" style="color:#ffc92e;">IGD's Website</h1>
+        </div>
+    </div>
+    <div class="fade-in-image">
+        <h1 class="foodselection" style="color: #008356;">-Recommend Menu-</h1>
+        <article class="container1">
+            
+            <div class="box2">
+                <a href="/product001"><img src="Phase1_pic/GrilledSeaBasswithMisoSauce.jpg"
+                        width="300" height="170" style="object-fit: cover;"></a>
+                <h3 class="recommend">Grilled Sea Bass with Miso Sauce</h3>
+                <div class="description">
+                    <a class="more" href="/product001">more information</a>
+                </div>
+            </div>
+
+            <div class="box2">
+                <a href="/product002"><img src="Phase1_pic/ClearSoupWithOmlete1.jpg" width="300"
+                        height="170" style="object-fit: cover;"></a>
+                <h3 class="recommend">Clear soup with Omlete</h3>
+                <div class="description">
+                    <a class="more" href="/product002">more information</a>
+                </div>
+            </div>
+
+            <div class="box2">
+                <a href="/product003"><img src="Phase1_pic/SpicyMixedVegetableSoup.jpg" width="300" height="170"
+                        style="object-fit: cover;"></a>
+                <div class="description">
+                    <h3 class="recommend">Spicy mixed vegetable soup</h3>
+                    <a  class="more" style="padding-top: 55px;" href="/product003">more information</a>
+                </div>
+            </div>
+            
+
+            <div class="box2">
+                <a href="/product004"><img src="Phase1_pic/BoiledRiceWithGrouper.jpg"
+                    width="300" height="170" style="object-fit: cover;"></a>
+                <div class="description">
+                    <h3 class="recommend">Boiled Rice with Grouper</h3>
+                    <a  class="more" style="padding-top: 55px;" href="/product004">more information</a>
+                </div>
+            </div>
+
+            <div class="box2">
+                <a href="/product005"><img src="Phase1_pic/SpicyChickenSoupWithMushrooms.jpg"
+                        width="300" height="170" style="object-fit: cover;"></a>
+                <h3 class="recommend">Spicy chicken soup with mushrooms</h3>
+                <div class="description">
+                    <a class="more" style="top:15px;" href="/product005">more information</a>
+                </div>
+            </div>
+            
+        </article>
+    </div>
+    <div class="fade-in-text">
+        <h1 class="foodselection">-Cuisine Selection-</h1>
+    </div>
+    <div class="fade-in-image">
+        <article class="container1">
+            <div class="box">
+                <a href=""><img src="Phase1_pic//apples-peanut-butter-cashew-butter-butter-snack-1296x728-header.png"
+                        width="250" height="150" style="object-fit: cover;"></a>
+                <div class="description">
+                    <h3>Low calories cuisine</h3>
+                </div>
+            </div>
+            <div class="box">
+                <a href=""><img src="Phase1_pic//low-sugar-foods-297447-1644010656361-main.700x0c.jpg" width="250"
+                        height="150" style="object-fit: cover;"></a>
+                <div class="description">
+                    <h3>Fruit and Vegetables</h3>
+                </div>
+            </div>
+            <div class="box">
+                <a href=""><img src="Phase1_pic//basil-chicken-cream-sauce-featured-image.jpg" width="250" height="150"
+                        style="object-fit: cover;"></a>
+                <div class="description">
+                    <h3>High protein cuisine</h3>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="fade-in-image">
+        <article class="container1">
+            <div class="box">
+                <a href=""><img src="Phase1_pic//protein-shake-recipes2.png" width="250" height="150"
+                        style="object-fit: cover;"></a>
+                <div class="description">
+                    <h3>Beverages</h3>
+                </div>
+            </div>
+            <div class="box">
+                <a href=""><img src="Phase1_pic//Yogurt-Parfait-with-Berries-768x1152.png" width="250" height="150"
+                        style="object-fit: cover;"></a>
+                <h3>Dessert</h3>
+            </div>
+            <div class="box">
+                <a href=""><img src="Phase1_pic//low-calorie-snack.png" width="250" height="150"
+                        style="object-fit: cover;"></a>
+                <h3>Appertizer</h3>
+            </div>
+        </article>
+    </div>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/" class="footnav">Home</a></li>
+                <li><a href="/product" class="footnav">Product</a></li>
+                <li><a href="" class="footnav">Services</a></li>
+                <li><a href="/accountmanage" class="footnav">Account Management</a></li>
+                <li><a href="/productmanage" class="footnav">Product Management</a></li>
+                <li><a href="" class="footnav">Policy</a></li>
+                <li><a href="/aboutus" class="footnav">About us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

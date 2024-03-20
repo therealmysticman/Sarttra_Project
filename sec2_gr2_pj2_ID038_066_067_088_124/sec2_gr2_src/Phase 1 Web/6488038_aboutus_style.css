@@ -1,0 +1,80 @@
+*{
+    font-family: 'Dangrek';
+}
+
+header{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    text-align: center;
+    color: #F8F9F9;
+    padding: 30px;
+
+}
+footer{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    text-align: center;
+    color: #F8F9F9;
+    padding: 30px;
+}
+body{
+        margin: 0px auto;
+        background: rgb(147,254,255);
+background: linear-gradient(0deg, rgba(147,254,255,1) 0%, rgba(239,163,255,1) 40%, rgba(193,134,241,1) 84%, rgba(189,0,153,1) 100%);
+}
+.c{
+    background: rgb(77,197,250);
+    background: radial-gradient(circle, rgba(77,197,250,1) 0%, rgba(20,48,255,1) 100%);
+    text-align: center;
+    font-size: 28px;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+ul{
+    margin: 0;
+}
+nav a:hover {
+    color: #fa88f4;
+}
+
+.b{
+    text-align: center;
+    font-size: 28px;
+
+}
+.one, .three{
+    text-align: right;
+}
+
+.two{
+    text-align: left;
+}
+section{
+text-align: center;    
+color: #1109f9;
+}
+a{
+    padding: 30px;
+    text-decoration: none;
+    color: #F8F9F9;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.zero{
+    text-align: center;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .fade-in-image { 
+    animation: fadeIn 3s; 
+  }

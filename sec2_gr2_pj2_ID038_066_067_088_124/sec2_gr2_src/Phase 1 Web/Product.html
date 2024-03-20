@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Dangrek' rel='stylesheet'>
+    <title>Product</title>
+</head>
+<!--have to modify style in here since bugging issues in style.css-->
+<style>
+    p,
+    h4 {
+        line-height: 0.6em;
+    }
+
+    h3 {
+        line-height: 1.2em;
+    }
+
+    h1.foodselection {
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: #24805A;
+    }
+
+    h1.foodselection1 {
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: white;
+        margin-top: 0px;
+    }
+
+    a.more {
+        text-decoration: none;
+        font-size: 24px;
+        font-style: italic;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: black;
+    }
+
+    a.more:hover {
+        color: #24805A
+    }
+
+    body {
+        background: rgb(226, 250, 230);
+        background: linear-gradient(0deg, rgba(226, 250, 230, 1) 0%, rgba(226, 233, 231, 1) 100%);
+    }
+
+    .searchbar {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    button {
+        width: 100px;
+        height: 70px;
+        border-radius: 50px;
+        margin-left: 20px;
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 3px solid white;
+        color: white;
+    }
+
+    button:hover {
+        color: #ffc92e;
+        border-color: #ffc92e;
+    }
+
+    input.input1 {
+        width: 520px;
+        height: 70px;
+        background-color: transparent;
+        border: 3px solid white;
+        color: white;
+        padding: 10px 6px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        border-radius: 50px;
+        padding: 10px 20px;
+    }
+
+    input.input1:focus {
+        outline: none;
+    }
+
+    select:focus {
+        outline: none;
+    }
+
+    .box {
+        height: 420px;
+        width: 300px;
+        margin: 20px;
+        box-sizing: inherit;
+        border: 3.8px solid #008356;
+        background-color: #F5FFE7;
+        border-radius: 40px 0px 0px 0px;
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    input[type="search"]::placeholder {
+        color: white;
+    }
+
+    footer {
+        background: rgb(167, 255, 153);
+        background: linear-gradient(90deg, rgba(167, 255, 153, 1) 0%, rgba(95, 224, 107, 1) 0%, rgba(0, 168, 73, 1) 100%);
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        min-height: 5%;
+        width: 100%;
+    }
+
+    section.searchpart {
+        background-color: #008356;
+        height: 420px;
+        background-image: url("Phase1_pic/pngegg\ \(3\).png");
+        background-repeat: no-repeat;
+        background-position: 0px 120px;
+        background-size: 550px;
+    }
+
+    select {
+        background: transparent;
+        color: white;
+        border: 3px solid white;
+        width: 160px;
+        height: 60px;
+        border-radius: 50px;
+        margin-left: 20px;
+    }
+
+    .custom-select {
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+
+    option.dropdown {
+        background-color: #ffc92e;
+        color: black;
+    }
+</style>
+
+
+<body>
+    <header>
+        <a href="/"><img src="Phase1_pic/IGD-removebg-preview.png" width="100" height="100"></a>
+        <nav id="navbar">
+            <div class="head">
+                <ul>
+                    <li><a href="/" class="midfont headnav">Home</a></li>
+                    <li><a href="/product" class="midfont headnav">Product</a></li>
+                    <li><a href="/search" class="midfont headnav">Search</a></li>
+                    <li><a href="/login" class="midfont headnav">Login</a></li>
+                    <li><a href="/register" class="midfont headnav">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="fade-in-text">
+        <form id="search-form">
+            <section class="searchpart" id="search">
+                <h1 class="foodselection1" style="font-size: 40px; color: #ffc92e;">
+                    Explore more food!
+                </h1>
+                <div class="searchbar">
+                    <input class="input1" type="search" id="search-input" placeholder="Search" />
+                    <button type="submit" onclick="searchFood()" >Search</button>
+                </div>
+                <div class="custom-select">
+                    <select id="type">
+                        <option class="dropdown" value="0">Type</option>
+                        <option class="dropdown" value="main dish">Main Dish</option>
+                        <option class="dropdown" value="appetizer">Appetizer</option>
+                        <option class="dropdown" value="dessert">Dessert</option>
+                        <option class="dropdown" value="beverage">Beverage</option>
+                    </select>
+                    <select id="nutrition">
+                        <option class="dropdown" value="0">Nutrition</option>
+                        <option class="dropdown" value="protein">Protein</option>
+                        <option class="dropdown" value="fat">Fat</option>
+                        <option class="dropdown" value="fruit and vegetables">Fruit and vegetables</option>
+                        <option class="dropdown" value="starch">Starch</option>
+                        <option class="dropdown" value="dairy">Dairy</option>
+                    </select>
+                    <select id="factor">
+                        <option class="dropdown" value="0">Other Factor</option>
+                        <option class="dropdown" value="seafood allergic">Seafood allergic</option>
+                        <option class="dropdown" value="low calories">Low Calories</option>
+                        <option class="dropdown" value="heart disease">Heart disease</option>
+                        <option class="dropdown" value="diabetes">Diabetes</option>
+                        <option class="dropdown" value="obesity">Obesity</option>
+                    </select>
+                </div>
+            </section>
+        </form>
+    </div>
+    <div id="search-output"></div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/" class="footnav">Home</a></li>
+                <li><a href="/product" class="footnav">Product</a></li>
+                <li><a href="" class="footnav">Services</a></li>
+                <li><a href="/accountmanage" class="footnav">Account Management</a></li>
+                <li><a href="/productmanage" class="footnav">Product Management</a></li>
+                <li><a href="" class="footnav">Policy</a></li>
+                <li><a href="/aboutus" class="footnav">About us</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="search.js">
+
+    </script>
+
+</body>
+
+</html>

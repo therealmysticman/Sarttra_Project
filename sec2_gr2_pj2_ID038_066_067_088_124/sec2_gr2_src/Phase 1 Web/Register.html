@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .titlereg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-right: 50px;
+    }
+
+</style>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Dangrek' rel='stylesheet'>
+    <title>Register</title>
+</head>
+<script>
+
+</script>
+<body>
+    <header>
+        <a href="/"><img src="Phase1_pic/IGD-removebg-preview.png" width="100" height="100"></a>
+        <nav class="head" id="navbar">
+            <ul>
+                <li><a href="/" class="midfont headnav">Home</a></li>
+                <li><a href="/product" class="midfont headnav">Product</a></li>
+                <li><a href="/search" class="midfont headnav">Search</a></li>
+                <li><a href="/login" class="midfont headnav">Login</a></li>
+                <li><a href="/register" class="midfont headnav">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="/register" method="post">
+        <fieldset class="fieldset2">
+            <legend>Register</legend>
+            <div class="titlereg">
+                <img class="homefood" src="Phase1_pic/IGD-removebg-preview.png" alt="headfood" width="120" height="120">
+                <h1 class="foodtopic" style="color:#ffc92e;">IGD's Member</h1>
+            </div>
+            <h2 style="font-style: italic;"> Write down your information here</h2>
+            <label>First Name:</label>
+            <input class="input1" style="width: 120px;" type="text" name="firstName" required>
+            <label>Last Name:</label>
+            <input class="input1" style="width: 120px;" type="text" name="lastName" required>
+            <label>Nickname:</label>
+            <input class="input2" style="width: 110px;" type="text" name="nickname" required>
+            <br>
+            <label>Email:</label>
+            <input class="input1" style="width: 240px;"  type="email" name="email" required>
+            <label>Tel:</label>
+            <input class="input1" style="width: 215px;"  type="tel" name="mobile" required>
+            <br>
+            <label>Username:</label>
+            <input class="input1" style="width: 200px;" type="text" name="username" required>
+            <label>Password:</label>
+            <input class="input1" style="width: 255px;" type="text" name="password" required><br>
+            <button class="reg" type="submit">submit</button>
+        </fieldset>
+    </form>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/" class="footnav">Home</a></li>
+                <li><a href="/product" class="footnav">Product</a></li>
+                <li><a href="" class="footnav">Services</a></li>
+                <li><a href="/accountmanage" class="footnav">Account Management</a></li>
+                <li><a href="/productmanage" class="footnav">Product Management</a></li>
+                <li><a href="" class="footnav">Policy</a></li>
+                <li><a href="/aboutus" class="footnav">About us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
