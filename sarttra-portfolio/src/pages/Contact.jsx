@@ -8,7 +8,7 @@ const Contact = () => {
     window.scrollTo(0, 0);
     
     // Force a repaint to restart animations
-    const elements = document.querySelectorAll('.contact-title, .contact-card, .contact-info-item, .form-group, .submit-button');
+    const elements = document.querySelectorAll('.contact-button-container, .contact-card, .contact-info-item, .form-group, .submit-button');
     elements.forEach(el => {
       el.style.animation = 'none';
       void el.offsetWidth; // Trigger reflow
@@ -34,7 +34,9 @@ const Contact = () => {
       <div className="floating-diamond floating-diamond-7"></div>
       
       <div className="contact-content">
-        <h1 className="contact-title">Contact Me</h1>
+        <div className="contact-button-container">
+          <div className="contact-button">Contact</div>
+        </div>
         
         <div className="contact-cards-container">
           {/* Contact Information Card */}
