@@ -1,0 +1,1167 @@
+/* Reset and base styles */
+body, #root {
+  position: relative;
+  z-index: 0;
+}
+
+/* Fade-in animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Apply fade-in to sections */
+.sarttras-world-button-container.fade-in,
+.introduction-text.fade-in,
+.skills-section.fade-in,
+.portfolio-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add transition delays for sequential animation */
+.sarttras-world-button-container {
+  transition-delay: 0.1s;
+}
+
+.introduction-text {
+  transition-delay: 0.2s;
+}
+
+.skills-section {
+  transition-delay: 0.3s;
+}
+
+.portfolio-section {
+  transition-delay: 0.4s;
+}
+
+.home-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #38333A;
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero section styles */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem 2rem;
+  background-color: #38333A;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Remove extra background layer */
+.hero-section::before {
+  display: none;
+}
+
+/* Floating diamonds - global styles */
+.floating-diamond {
+  position: absolute;
+  opacity: 1;
+  pointer-events: none;
+  animation: float 15s ease-in-out infinite alternate;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: block !important;
+}
+
+/* Hero section diamonds */
+.hero-section .floating-diamond {
+  position: absolute;
+  z-index: 1;
+}
+
+/* Featured section diamonds */
+.featured-work-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-work-section .floating-diamond {
+  position: absolute;
+  z-index: 1;
+}
+
+/* Additional diamond styles for featured section */
+.floating-diamond-8 {
+  top: 5%;
+  right: 5%;
+  width: 130px;
+  height: 130px;
+  background: linear-gradient(135deg, #ff8bcf, #e860a7);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 19s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  transform: rotate(15deg);
+}
+
+.floating-diamond-9 {
+  bottom: 25%;
+  right: 15%;
+  width: 110px;
+  height: 110px;
+  background: linear-gradient(135deg, #22d3ee, #24c1ff);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 23s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  transform: rotate(-10deg);
+}
+
+.floating-diamond-10 {
+  top: 30%;
+  left: -5%;
+  width: 170px;
+  height: 170px;
+  background: linear-gradient(135deg, #22d3ee, #24c1ff);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 26s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  transform: rotate(25deg);
+}
+
+.floating-diamond-1 {
+  top: 5%;
+  left: -5%;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #22d3ee, #24c1ff);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 20s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-2 {
+  bottom: 10%;
+  right: 5%;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #ff7bbd, #e860a7);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 25s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-3 {
+  top: 60%;
+  right: -5%;
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(45deg, #fff2b6, #d3b17f);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 22s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-4 {
+  top: 40%;
+  right: 40%;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(45deg, #4dd5ff, #0ea5e9);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 18s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-5 {
+  top: 70%;
+  left: 20%;
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(45deg, #fff2b6, #d3b17f);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 21s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-6 {
+  top: 15%;
+  left: 35%;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, #ff8bcf, #e860a7);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 17s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-7 {
+  bottom: 20%;
+  left: 30%;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(45deg, #fff2b6, #d3b17f);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 24s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-20px, -15px) rotate(5deg);
+  }
+  100% {
+    transform: translate(20px, 15px) rotate(-5deg);
+  }
+}
+
+@keyframes rotateBg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation variations */
+@keyframes float-alt {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translate(-15px, 10px) rotate(-3deg) scale(1.05);
+  }
+  66% {
+    transform: translate(10px, -15px) rotate(3deg) scale(0.95);
+  }
+  100% {
+    transform: translate(5px, 5px) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Apply different animations to some diamonds */
+.floating-diamond-4 {
+  animation: float-alt 12s ease-in-out infinite alternate;
+}
+
+.floating-diamond-6 {
+  animation: float-alt 15s ease-in-out infinite alternate;
+}
+
+.floating-diamond-2, .floating-diamond-5, .floating-diamond-7 {
+  animation: float 15s ease-in-out infinite alternate, sparkle 4s ease-in-out infinite;
+}
+
+/* Slider section styling */
+.slider-section {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+  margin-left: 20px;
+  z-index: 2;
+  min-height: auto;
+}
+
+/* Diamond container and shape */
+.diamond-container {
+  width: 670px;
+  height: 670px;
+  margin: 0 auto;
+  transform-origin: center;
+  /* Base scale for desktop - increased size */
+  transform: scale(0.65);
+  position: relative;
+  left: 0; /* Default position */
+  padding: 20px;
+  background: linear-gradient(to bottom, #fff2b6, #d3b17f);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  box-shadow: 0 0 25px rgba(252, 211, 77, 0.7);
+  z-index: 2;
+}
+
+/* Diamond inner container to create border effect */
+.diamond-inner {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background-color: #38333A;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  z-index: 5;
+}
+
+.diamond-shape {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: rotate(0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Slider images */
+.slider-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image-active {
+  opacity: 1;
+}
+
+.slider-image-inactive {
+  opacity: 0;
+}
+
+/* Navigation arrows */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  color: white;
+  z-index: 20;
+  border: 3px solid #fff2b6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.nav-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 20px rgba(252, 211, 77, 0.7);
+  border-color: #fcd34d;
+}
+
+.prev-arrow {
+  left: 100px;
+}
+
+.next-arrow {
+  right: 100px;
+}
+
+/* SVG icons inside nav arrows */
+.nav-arrow svg {
+  width: 55px;
+  height: 55px;
+  stroke-width: 3;
+  color: #ffffff;
+}
+
+/* Welcome section styling */
+.welcome-section {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  margin: 2rem auto 0;
+  z-index: 15;
+}
+
+.welcome-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff2b6;
+  text-shadow: 0 0 10px rgba(102, 102, 102, 0.7);
+}
+
+.welcome-content {
+  width: 100%;
+}
+
+.welcome-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 4px solid rgb(255, 123, 189);
+}
+
+/* Featured work section - using About page card style */
+.featured-work-section {
+  width: 100%;
+  padding: 3rem 1rem;
+  background-color: #38333A;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Sarttra's World button container - similar to About page button */
+.sarttras-world-button-container {
+  position: relative;
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.sarttras-world-button {
+  width: 16rem;
+  height: 4rem;
+  background: linear-gradient(to right, #4dd5ff, #24c1ff);
+  border-radius: 9999px;
+  border: 3px solid #fff2b6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sarttras-world-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Featured work content */
+.featured-work-content {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Introduction text */
+.introduction-text {
+  max-width: 1300px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(36, 193, 255, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.introduction-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #38333A;
+}
+
+/* Skills section */
+.skills-section {
+  margin-bottom: 2.5rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.skills-header {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.skills-header span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  background: linear-gradient(to left, #e860a7, #e92687);
+  border-radius: 500px;
+  color: white;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 3px solid #911f4b;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.8rem 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+}
+
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-item p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #38333A;
+  margin-top: 0.5rem;
+}
+
+/* Portfolio section */
+.portfolio-section {
+  margin-top: 3rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.portfolio-header {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.portfolio-header span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  background: linear-gradient(to left, #e860a7, #e92687);
+  border: 3px solid #911f4b;
+  border-radius: 500px;
+  color: white;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(36, 193, 255, 0.3);
+  align-items: center;
+  position: relative;
+}
+
+.portfolio-slider {
+  width: 60%;
+  aspect-ratio: 4/4.2;
+  background-color: rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid rgba(36, 193, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  border-radius: 8px;
+}
+
+.portfolio-slide-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.portfolio-slide-inactive {
+  opacity: 0;
+  z-index: 0;
+}
+
+.portfolio-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.portfolio-description {
+  padding: 1.5rem 1.5rem 3rem;
+  line-height: 1.6;
+  color: #38333A;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  text-align: center;
+  max-width: 90%;
+  position: relative;
+}
+
+.portfolio-description p {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0;
+  z-index: 6;
+}
+
+.portfolio-button {
+  background: linear-gradient(to right, #22d3ee, #0ea5e9);
+  color: white;
+  padding: 0.35rem 0.9rem;
+  border-radius: 18px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: 1px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* View Portfolio button - specific styling for a very small button */
+.view-portfolio-button {
+  background: linear-gradient(to right, #006ba8, #02315c);
+  color: rgb(255, 255, 255);
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: 2px solid rgb(255, 217, 146);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.view-portfolio-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to right, #22a3ee, #02315c);
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem 3rem;
+    position: relative;
+    gap: 0;
+  }
+  
+  .slider-section {
+    width: 45%;
+    margin-bottom: 0;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 30px;
+  }
+  
+  .welcome-section {
+    width: 45%;
+    margin: 0;
+    margin-left: -1rem;
+    text-align: left;
+    padding-left: 0;
+  }
+  
+  .welcome-title {
+    font-size: 3rem;
+  }
+  
+  .welcome-description {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .portfolio-preview {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+  }
+  
+  .portfolio-slider {
+    width: 35%;
+    aspect-ratio: 4/4.2;
+  }
+  
+  .portfolio-description {
+    width: 35%;
+    max-width: none;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 1.5rem 3.4rem 3.3rem;
+  }
+  
+  .portfolio-description p {
+    text-align: left;
+  }
+
+  .button-container {
+    bottom: 1rem;
+  }
+  
+  .management-item {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .welcome-section {
+    width: 45%;
+    margin-left: -2rem;
+  }
+  
+  .welcome-title {
+    font-size: 5.5rem;
+  }
+  
+  .welcome-description {
+    font-size: 1.2rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .portfolio-slider {
+    width: 38%;
+    aspect-ratio: 4/4.2;
+  }
+  
+  .portfolio-description {
+    width: 30%;
+  }
+  
+  .slider-section {
+    margin-left: 40px;
+  }
+}
+
+/* Very large screens */
+@media (min-width: 1440px) {
+  .diamond-container {
+    transform: scale(0.7);
+    left: 0; /* No shift for largest screens */
+  }
+}
+
+/* DESKTOP - Specific tweaks */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .slider-section {
+    margin-left: 40px;
+  }
+  
+  .diamond-container {
+    left: 0; /* No shift for regular desktop */
+  }
+}
+
+/* TABLET - Medium size */
+@media (max-width: 1023px) {
+  .diamond-container {
+    /* Medium scale for tablets */
+    transform: scale(0.5);
+    left: -8vw; /* Adjusted for better centering on tablets */
+  }
+  
+  .slider-section {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Increased font sizes for tablet */
+  .welcome-title {
+    font-size: 4rem; /* Increased from desktop size */
+  }
+  
+  .welcome-description {
+    font-size: 1.3rem; /* Increased from desktop size */
+    line-height: 1.7;
+  }
+}
+
+/* Small tablets adjustment */
+@media (max-width: 900px) and (min-width: 768px) {
+  .diamond-container {
+    transform: scale(0.48); /* Restored scale value */
+    left: -12vw; /* More shift for smaller tablets */
+  }
+  
+  /* Maintain increased font size */
+  .welcome-title {
+    font-size: 3.5rem;
+  }
+  
+  .welcome-description {
+    font-size: 1.25rem;
+  }
+}
+
+/* MOBILE - Smaller size */
+@media (max-width: 767px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 3rem 1rem 2rem;
+    overflow: hidden;
+  }
+  
+  .slider-section {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* Fluid height based on viewport width */
+    min-height: calc(180px + 15vw);
+    overflow: visible;
+    margin-bottom: -20px; /* Reduced bottom margin to move welcome area up */
+    width: 100%;
+  }
+  
+  .diamond-container {
+    /* Smaller scale for mobile - increased size */
+    transform: scale(0.38);
+    /* Additional adjustments for mobile */
+    margin: calc(-15px - 1vw) auto calc(-40px - 3vw); /* Increased bottom negative margin to pull welcome section up */
+    left: -22vw; /* Increased left offset for mobile */
+  }
+  
+  .diamond-inner {
+    top: calc(6px + 0.5vw);
+    left: calc(6px + 0.5vw);
+    right: calc(6px + 0.5vw);
+    bottom: calc(6px + 0.5vw);
+  }
+  
+  .slider-image {
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .welcome-section {
+    position: static;
+    width: 90%;
+    max-width: none;
+    margin: 0 auto;
+    padding-top: 0; /* Reduced top padding to move welcome section up */
+    transform: none;
+    text-align: center;
+  }
+  
+  .welcome-title {
+    font-size: 3rem; /* Increased from previous 2.2rem */
+    text-align: center;
+  }
+  
+  .welcome-description {
+    margin: 0 auto;
+    font-size: 1.2rem; /* Increased from previous size */
+    line-height: 1.6;
+    padding: 1.5rem; /* Added padding for better readability */
+  }
+  
+  .management-item {
+    grid-column: span 2;
+  }
+  
+  .sarttras-world-button {
+    width: 14rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Adjust navigation arrows for mobile */
+  .nav-arrow {
+    width: 45px;
+    height: 45px;
+    border-width: 2px;
+    top: 55%;
+    border-color: #fff2b6;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .nav-arrow svg {
+    width: 28px;
+    height: 28px;
+    stroke-width: 3;
+    color: #ffffff;
+  }
+  
+  .prev-arrow {
+    left: 15px;
+  }
+  
+  .next-arrow {
+    right: 15px;
+  }
+}
+
+/* Medium-small phones */
+@media (max-width: 480px) {
+  .diamond-container {
+    transform: scale(0.35);
+    left: -32vw; /* Increased left offset for medium-small phones */
+    margin-bottom: -60px; /* Further increased negative margin to move welcome section up more */
+  }
+  
+  .slider-section {
+    margin-bottom: -40px; /* Further reduced spacing for smaller screens */
+    min-height: 250px;
+  }
+  
+  .welcome-section {
+    padding-top: 0; /* No top padding for smaller screens */
+    margin-top: -15px; /* Added negative margin to move up further */
+  }
+  
+  .sarttras-world-button {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+  
+  /* Further adjust navigation arrows for small mobile - moved down */
+  .nav-arrow {
+    width: 42px;
+    height: 42px;
+    top: 52%; /* Moved down from 40% to 50% */
+    border-width: 3px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .nav-arrow svg {
+    width: 25px;
+    height: 25px;
+    stroke-width: 3.5;
+  }
+  
+  .prev-arrow {
+    left: 10px;
+  }
+  
+  .next-arrow {
+    right: 10px;
+  }
+  
+  .welcome-title {
+    font-size: 3.0rem; /* Increased from 2.5rem to 3.0rem */
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(102, 102, 102, 0.7);
+    margin-bottom: 0.9rem;
+  }
+  
+  .welcome-description {
+    font-size: 1.2rem; /* Increased from previous size */
+    padding: 1.3rem; /* Adjusted padding */
+    line-height: 1.6;
+  }
+}
+
+/* Skill icon specific styles */
+.tech-icon {
+  background-image: url('../assets/it_skill.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.art-icon {
+  background-image: url('../assets/art_skill.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.editing-icon {
+  background-image: url('../assets/edit_skill.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.language-icon {
+  background-image: url('../assets/language_skill.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.management-icon {
+  background-image: url('../assets/management_skill.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* SMALL MOBILE - Smallest size */
+@media (max-width: 375px) {
+  .diamond-container {
+    /* Smallest scale for very small screens - increased size */
+    transform: scale(0.32);
+    left: -35vw; /* Increased left offset for smallest screens */
+    margin-bottom: -70px; /* Increased negative margin for smallest screens */
+  }
+  
+  .slider-section {
+    min-height: calc(150px + 10vw);
+    margin-bottom: -50px; /* Further reduced spacing for smallest screens */
+    margin: 0 auto;
+  }
+  
+  .welcome-section {
+    padding-top: 0;
+    margin-top: -25px; /* Even more negative margin for smallest screens */
+  }
+  
+  /* Move nav arrows even lower for smallest screens */
+  .nav-arrow {
+    top: 55%; /* Moved even further down for smallest screens */
+    width: 42px;
+    height: 42px;
+    border-width: 3px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .nav-arrow svg {
+    width: 25px;
+    height: 25px;
+    stroke-width: 3.5;
+  }
+  
+  .prev-arrow {
+    left: 10px;
+  }
+  
+  .next-arrow {
+    right: 10px;
+  }
+  
+  .welcome-title {
+    font-size: 3.2rem; /* Significantly increased font size for small phones */
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(102, 102, 102, 0.7);
+    margin-bottom: 0.8rem; /* Reduced bottom margin to tighten layout */
+  }
+  
+  .welcome-description {
+    font-size: 1.2rem; /* Increased from previous size */
+    padding: 1.2rem; /* Adjusted padding */
+    line-height: 1.6;
+  }
+  
+  .sarttras-world-button {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+  
+  .portfolio-slider {
+    width: 60%;
+    aspect-ratio: 4/4.2;
+  }
+}

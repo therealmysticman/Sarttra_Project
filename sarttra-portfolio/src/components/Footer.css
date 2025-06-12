@@ -1,0 +1,126 @@
+.footer-container {
+  background: linear-gradient(to right, #e860a7, #e92687);
+  width: 100%;
+  padding: 1.5rem;
+  color: white;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+  max-width: 450px;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.footer-description {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.footer-button {
+  background: linear-gradient(to right, #ffe7a6, #eccf8e);
+  color: #333;
+  border: 2px solid #99785c;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 9000px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-button:hover {
+  transform: translateY(-2px);
+  border: 2px solid #99785c;
+}
+
+
+.footer-right {
+  display: flex;
+  min-width: 250px;
+  justify-content: flex-end;
+}
+
+.contact-info {
+  max-width: 300px;
+}
+
+.info-item {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-item h3 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.info-value {
+  font-size: 0.85rem;
+  color: white;
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.social-link {
+  color: white;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .footer-right {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+  }
+} 

@@ -1,0 +1,1665 @@
+/* Mobile Skill Overrides - placed at the beginning to ensure they take precedence */
+@media screen and (max-width: 767px) {
+  .about-skill-item {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-bottom: 3rem !important;
+  }
+  
+  .about-skill-bar {
+    display: none !important;
+  }
+  
+  .about-skill-name {
+    width: auto !important;
+    padding-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .about-skill-percentage {
+    position: static !important;
+    transform: none !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* Floating diamond styles */
+.floating-diamond {
+  position: absolute;
+  opacity: 1;
+  pointer-events: none;
+  animation: float 15s ease-in-out infinite alternate;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: block !important;
+}
+
+.floating-diamond-1 {
+  top: 5%;
+  left: -5%;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #22d3ee, #24c1ff);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 20s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-2 {
+  bottom: 10%;
+  right: 5%;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #ff7bbd, #e860a7);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 25s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-3 {
+  top: 60%;
+  right: -5%;
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(45deg, #fff2b6, #d3b17f);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 22s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-4 {
+  top: 40%;
+  right: 40%;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(45deg, #4dd5ff, #0ea5e9);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 18s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-5 {
+  top: 70%;
+  left: 20%;
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(45deg, #fff2b6, #d3b17f);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 21s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-6 {
+  top: 15%;
+  left: 35%;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, #ff8bcf, #e860a7);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 17s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.floating-diamond-7 {
+  bottom: 20%;
+  left: 30%;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(45deg, #fff2b6, #d3b17f);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation-duration: 24s;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-20px, -15px) rotate(5deg);
+  }
+  100% {
+    transform: translate(20px, 15px) rotate(-5deg);
+  }
+}
+
+.about-container {
+  min-height: 100vh;
+  background-color: #38333A;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.about-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.about-button-container {
+  position: relative;
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  z-index: 10;
+}
+
+.about-button {
+  width: 12rem;
+  height: 4rem;
+  background: linear-gradient(to right, #4dd5ff, #24c1ff);
+  border-radius: 9999px;
+  border: 3px solid #fff2b6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 1.7rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-card {
+  background-color: #C4C4C4;
+  color: #38333A;
+  width: 100%;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.about-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .about-flex {
+    flex-direction: row;
+  }
+}
+
+.about-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .about-image-container {
+    width: 33.333333%;
+  }
+}
+
+.about-profile-image {
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.about-details {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .about-details {
+    width: 66.666667%;
+  }
+}
+
+.about-text {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.education-section {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education-button-container {
+  position: relative;
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  justify-content: center !important;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+  z-index: 10;
+}
+
+.education-button {
+  width: 16rem;
+  height: 4rem;
+  background: linear-gradient(to left, #e860a7, #e92687);
+  border: 3px solid #911f4b;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.7rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.education-card {
+  background-color: #C4C4C4;
+  color: #38333A;
+  width: 100%;
+  max-width: 1700px;
+  padding: 3.5rem 4.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.education-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.education-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .education-entry {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.education-divider {
+  height: 2px;
+  background-color: #38333A;
+  opacity: 0.3;
+  margin: 1.5rem 0;
+}
+
+.education-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .education-logo-container {
+    width: 16.666667%;
+  }
+}
+
+.education-logo {
+  width: 100%;
+  max-width: 150px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.education-details {
+  width: 100%;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .education-details {
+    width: 83.333333%;
+  }
+}
+
+.education-title {
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.education-info {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+/* Skills Section */
+.about-skills-section {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-skills-button-container {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  display: flex;
+  justify-content: center !important;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+  z-index: 10;
+}
+
+.about-skills-button {
+  width: 12rem;
+  height: 4rem;
+  background: linear-gradient(to left, #e860a7, #e92687);
+  border: 3px solid #911f4b;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.7rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.about-skills-card {
+  background-color: #C4C4C4;
+  color: #38333A;
+  width: 100%;
+  max-width: 1700px;
+  padding: 3.5rem 4.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Create a container for skill bars to center them */
+.about-skill-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Update skill item to properly center content */
+.about-skill-item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+/* Make sure skills name is properly aligned */
+.about-skill-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  width: 300px;
+  padding-right: 1.5rem;
+  text-align: left;
+}
+
+.about-skill-bar {
+  height: 30px;
+  background-color: #E8E8E8;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  max-width: 850px;
+}
+
+.about-skill-percentage {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  min-width: 55px;
+  text-align: left;
+}
+
+/* Blue background */
+.about-skill-progress {
+  height: 100%;
+  width: 100%;
+  background-color: #1e8cb8;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Gold fill overlay */
+.about-skill-fill {
+  height: 100%;
+  background-color: #ffdd9d;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Start at 0 */
+  transition: width 2s ease-out;
+  z-index: 1;
+}
+
+/* Animation classes */
+.about-skill-fill.tech.animated {
+  width: 80%;
+}
+
+.about-skill-fill.art.animated {
+  width: 65%;
+}
+
+.about-skill-fill.editing.animated {
+  width: 70%;
+}
+
+.about-skill-fill.language.animated {
+  width: 68%;
+}
+
+.about-skill-fill.management.animated {
+  width: 75%;
+}
+
+.about-detailed-skills-card {
+  background-color: #C4C4C4;
+  color: #38333A;
+  width: 100%;
+  max-width: 1700px;
+  padding: 3.5rem 4.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  position: relative;
+  padding: 0 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Vertical separator line */
+.about-skills-grid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #38333A;
+  opacity: 0.3;
+}
+
+.about-skills-column {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.5rem;
+}
+
+.about-skill-category {
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fix skill category title alignment */
+.about-skill-category-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Ensure icon stays on the same line */
+.about-icon {
+  font-size: 1.6rem;
+  margin-right: 0.8rem;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.about-horizontal-divider {
+  height: 1px;
+  background-color: #38333A;
+  opacity: 0.3;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.about-skill-subcategory {
+  margin-bottom: 1rem;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.about-skill-subcategory strong {
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.about-skill-list {
+  list-style-type: none;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.about-skill-list li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.about-skill-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #38333A;
+}
+
+.about-interests-section {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-interests-button-container {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  display: flex;
+  justify-content: center !important;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+  z-index: 10;
+}
+
+.about-interests-button {
+  width: 12rem;
+  height: 4rem;
+  background: linear-gradient(to left, #e860a7, #e92687);
+  border: 3px solid #911f4b;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.7rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.about-interests-card {
+  background-color: #C4C4C4;
+  color: #38333A;
+  width: 100%;
+  max-width: 1700px;
+  padding: 3.5rem 4.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.about-interests-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 4.5rem;
+  justify-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* First row with 3 items */
+.about-interest-item:nth-child(1),
+.about-interest-item:nth-child(2),
+.about-interest-item:nth-child(3) {
+  grid-row: 1;
+}
+
+/* Second row with 3 items */
+.about-interest-item:nth-child(4),
+.about-interest-item:nth-child(5),
+.about-interest-item:nth-child(6) {
+  grid-row: 2;
+}
+
+.about-interest-item:nth-child(4) {
+  grid-column: 1;
+}
+
+.about-interest-item:nth-child(5) {
+  grid-column: 2;
+}
+
+.about-interest-item:nth-child(6) {
+  grid-column: 3;
+}
+
+@media (min-width: 768px) {
+  .about-interests-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+.about-interest-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin: 0 1.5rem;
+}
+
+.about-interest-slider-container {
+  position: relative;
+  width: 280px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1.5rem;
+}
+
+.about-interest-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about-interest-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.about-interest-slide.active {
+  opacity: 1;
+}
+
+.about-interest-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-interest-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+/* Remove Slider hover effects */
+.about-interest-slider:hover .about-interest-slide.active {
+  opacity: 1; /* Keep active slide visible on hover */
+}
+
+.about-interest-slider:hover .about-interest-slide.next {
+  opacity: 0; /* Keep next slide hidden on hover */
+}
+
+/* Give more space between rows */
+.about-interest-item:nth-child(4),
+.about-interest-item:nth-child(5),
+.about-interest-item:nth-child(6) {
+  margin-top: 1rem;
+}
+
+.about-quote {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.about-quote p {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 400;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0.7rem 0;
+}
+
+.profile-section {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-button-container {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  display: flex;
+  justify-content: center !important;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+  z-index: 10;
+}
+
+.profile-button {
+  width: 12rem;
+  height: 4rem;
+  background: linear-gradient(to left, #e860a7, #e92687);
+  border: 3px solid #911f4b;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.7rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.profile-card {
+  background-color: #C4C4C4;
+  color: #38333A;
+  width: 100%;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3.5rem 4.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.profile-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .profile-flex {
+    flex-direction: row;
+  }
+}
+
+.profile-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .profile-image-container {
+    width: 33.333333%;
+  }
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .profile-details {
+    width: 66.666667%;
+  }
+}
+
+.profile-text {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  max-width: 800px;
+}
+
+.profile-text p {
+  margin-bottom: 0.8rem;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Set initial state for all sections */
+.about-quote,
+.profile-section,
+.education-section,
+.about-skills-section,
+.about-detailed-skills-card,
+.about-interests-section {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Add animation delay for each section */
+.about-quote.fade-in {
+  animation-delay: 0.1s;
+}   
+
+.profile-section.fade-in {
+  animation-delay: 0.6s;
+}
+
+.education-section.fade-in {
+  animation-delay: 0.1s;
+}
+
+.about-skills-section.fade-in {
+  animation-delay: 0.1s;
+}
+
+.about-detailed-skills-card.fade-in {
+  animation-delay: 0.1s;
+}
+
+.about-interests-section.fade-in {
+  animation-delay: 0.1s;
+}
+
+/* Updated centered-container */
+.centered-container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Update card layouts */
+.profile-card,
+.education-card,
+.about-skills-card,
+.about-detailed-skills-card,
+.about-interests-card {
+  display: flex;
+  justify-content: center;
+}
+
+/* Fix section centering */
+.profile-section,
+.education-section,
+.about-skills-section,
+.about-interests-section {
+  width: 100%;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Mobile styles for detailed skills card */
+@media (max-width: 767px) {
+  .about-detailed-skills-card {
+    padding: 2rem 1.5rem;
+    overflow: hidden;
+  }
+  
+  .about-skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  
+  .about-skills-grid::after {
+    display: none; /* Remove vertical separator */
+  }
+  
+  .about-skills-column {
+    padding: 0 1rem;
+  }
+  
+  .about-skill-category {
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-skill-category-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.4;
+  }
+  
+  .about-skill-subcategory strong {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .about-skill-list {
+    padding-left: 1.5rem;
+  }
+  
+  .about-skill-list li {
+    font-size: 1.1rem;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+    padding-right: 5px;
+  }
+  
+  .about-horizontal-divider {
+    margin: 1rem 0;
+  }
+}
+
+/* Mobile styles for interests grid */
+@media (max-width: 767px) {
+  .about-interests-card {
+    padding: 2rem 1rem;
+  }
+  
+  .about-interests-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .about-interest-item {
+    margin-bottom: 0;
+  }
+  
+  .about-interest-slider-container {
+    width: 240px;
+    height: 340px;
+  }
+  
+  /* Reset all margins for mobile */
+  .about-interest-item:nth-child(4),
+  .about-interest-item:nth-child(5),
+  .about-interest-item:nth-child(6) {
+    margin-top: 0;
+  }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 480px) {
+  .about-detailed-skills-card,
+  .about-interests-card,
+  .profile-card,
+  .education-card,
+  .about-skills-card {
+    padding: 2rem 1rem;
+  }
+  
+  .about-interest-slider-container {
+    width: 220px;
+    height: 320px;
+  }
+  
+  .about-skill-name {
+    font-size: 1.1rem;
+  }
+  
+  .about-quote p {
+    font-size: 1.5rem;
+  }
+  
+  .profile-text {
+    font-size: 1.3rem;
+  }
+  
+  .about-skill-category-title {
+    font-size: 1.3rem;
+    padding: 0 5px;
+  }
+  
+  .mobile-skill-name {
+    font-size: 1.2rem !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* Fix skill layout for mobile - making sure it displays properly */
+@media (max-width: 767px) {
+  /* Make sure skills are visible and laid out correctly */
+  .about-skills-card .centered-container .about-skill-item {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 3rem !important;
+    padding: 0 1rem !important;
+    width: 100% !important;
+  }
+  
+  /* Skill name styling */
+  .about-skills-card .centered-container .about-skill-item .about-skill-name {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    width: auto !important;
+    margin-bottom: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  /* Percentage styling */
+  .about-skills-card .centered-container .about-skill-item .about-skill-percentage {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    margin-left: 0 !important;
+    text-align: right !important;
+    color: #38333A !important;
+    position: static !important;
+    transform: none !important;
+  }
+  
+  /* Completely hide the progress bars */
+  .about-skills-card .centered-container .about-skill-item .about-skill-bar {
+    display: none !important;
+  }
+  
+  /* Ensure proper spacing */
+  .about-skills-card .centered-container .about-skill-item:last-child {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Card styling */
+  .about-skills-card {
+    padding: 2.5rem 1.5rem !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .about-skills-card {
+    padding: 2rem 1rem !important;
+  }
+  
+  .about-skills-card .centered-container .about-skill-item .about-skill-name {
+    font-size: 1.2rem !important;
+  }
+  
+  .about-skills-card .centered-container .about-skill-item .about-skill-percentage {
+    font-size: 1.2rem !important;
+  }
+  
+  .about-skills-card .centered-container .about-skill-item {
+    margin-bottom: 2.5rem !important;
+  }
+}
+
+/* Mobile Skills Component Styles */
+.mobile-skills-container {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.mobile-skill-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.mobile-skill-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #38333A;
+  margin-bottom: 0.8rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.3;
+  max-width: 100%;
+}
+
+.mobile-skill-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.mobile-skill-bar {
+  height: 8px;
+  background-color: #E8E8E8;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  margin-right: 1rem;
+}
+
+.mobile-skill-percentage {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #38333A;
+  text-align: right;
+  width: 20%;
+  min-width: 50px;
+}
+
+@media (max-width: 480px) {
+  .mobile-skill-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .mobile-skill-bar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.4rem;
+  }
+  
+  .mobile-skill-percentage {
+    align-self: flex-end;
+    width: auto;
+  }
+}
+
+/* Animation classes for mobile */
+.mobile-skill-fill.tech.animated {
+  width: 80%;
+}
+
+.mobile-skill-fill.art.animated {
+  width: 65%;
+}
+
+.mobile-skill-fill.editing.animated {
+  width: 70%;
+}
+
+.mobile-skill-fill.language.animated {
+  width: 68%;
+}
+
+.mobile-skill-fill.management.animated {
+  width: 75%;
+}
+
+/* For smaller mobile screens */
+@media (max-width: 480px) {
+  .mobile-skill-name {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  
+  /* Make Editing & Content Creator Skills display properly */
+  .mobile-skill-item:nth-child(3) .mobile-skill-name {
+    font-size: 1.1rem;
+  }
+}
+
+/* Remove the previous overrides that might be conflicting */
+@media screen and (max-width: 767px) {
+  .about-skill-bar {
+    display: none;
+  }
+}
+
+.mobile-skill-progress {
+  height: 100%;
+  width: 100%;
+  background-color: #1e8cb8;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mobile-skill-fill {
+  height: 100%;
+  background-color: #ffdd9d;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Start at 0 */
+  transition: width 2s ease-out;
+  z-index: 1;
+}
+
+/* Fix skill text wrapping on mobile screens */
+@media (max-width: 767px) {
+  .about-skill-category-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.4;
+  }
+  
+  .about-skill-list li {
+    font-size: 1.1rem;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+    padding-right: 5px;
+  }
+}
+
+/* Fix specifically for Communication and Management Skills title */
+@media (max-width: 480px) {
+  .about-skill-category-title {
+    font-size: 1.3rem;
+    padding: 0 5px;
+  }
+  
+  .mobile-skill-name {
+    font-size: 1.2rem !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    line-height: 1.3 !important;
+  }
+}
+
+.about-skill-category-title .skill-title-text {
+  display: inline;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+@media (max-width: 767px) {
+  .about-skill-category-title .skill-title-text {
+    display: inline-block;
+    width: 100%;
+    padding: 0 5px;
+  }
+}
+
+.mobile-long-skill-name {
+  display: inline-block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  width: 100%;
+  line-height: 1.3;
+}
+
+@media (max-width: 480px) {
+  .mobile-long-skill-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Make sure skill categories are properly displayed on mobile */
+  .about-skill-category {
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 0 5px;
+  }
+  
+  /* Ensure list items don't get cropped */
+  .about-skill-list li {
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 100%;
+  }
+  
+  /* For the longest skill category title */
+  .about-skill-category-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-skill-category-title .about-icon {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .about-skill-list li {
+    font-size: 1rem;
+    padding-right: 0;
+  }
+  
+  .mobile-skill-item {
+    margin-bottom: 1.8rem;
+  }
+}
+
+/* Multiline skill name for mobile */
+.mobile-multiline-skill {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  text-align: left;
+}
+
+/* Desktop vs mobile display */
+.desktop-only {
+  display: inline-block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+  
+  .mobile-only {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+  
+  .mobile-multiline-skill {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-only {
+    font-size: 1.1rem;
+  }
+  
+  .mobile-multiline-skill {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile-only divider */
+.mobile-only-divider {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-only-divider {
+    display: block;
+    height: 1px;
+    background-color: #38333A;
+    width: 100%;
+    margin: 1.5rem 0;
+    opacity: 0.3;
+  }
+}
+
+/* Mobile skill divider */
+.mobile-skill-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #38333A;
+  margin: 1rem 0;
+  opacity: 0.3;
+}
+
+/* Responsive skill adjustments */
+@media (max-width: 480px) {
+  /* Enhance mobile dividers */
+  .mobile-only-divider {
+    margin: 1.8rem 0;
+  }
+  
+  .mobile-skill-divider {
+    margin: 1.5rem 0;
+  }
+  
+  /* Improve skill category spacing */
+  .about-skill-category {
+    margin-bottom: 2.2rem;
+  }
+  
+  /* Better text contrast for smaller screens */
+  .about-skill-list li {
+    color: #222;
+  }
+}
+
+/* Adjust for very small screens */
+@media (max-width: 375px) {
+  .mobile-multiline-skill {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .mobile-only {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .about-skill-category-title {
+    font-size: 1.2rem;
+  }
+  
+  .about-skill-list li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Interest slide link styling */
+.about-interest-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.about-interest-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.about-interest-link:hover .about-interest-overlay {
+  opacity: 1;
+}
+
+.about-interest-click {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgba(255, 183, 225, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+
+.about-interest-link:hover .about-interest-click {
+  transform: translateY(0);
+}
+
+/* Mobile styling for clickable interest slides */
+@media (max-width: 767px) {
+  .about-interest-overlay {
+    opacity: 0.7; /* Always slightly visible on mobile */
+  }
+  
+  .about-interest-click {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Anime direct links styling */
+.anime-links-container {
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+.anime-direct-link {
+  display: inline-block;
+  background-color: #ffb7e1;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.anime-direct-link:hover {
+  background-color: #e860a7;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+  .anime-direct-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+/* Interest links styling (renamed from anime-links) */
+.interest-links-container {
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+.interest-direct-link {
+  display: inline-block;
+  background: linear-gradient(to right, #006ba8, #02315c);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid rgb(255, 217, 146);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.interest-direct-link:hover {
+  background-color: #e860a7;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+  .interest-direct-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+/* Auto slider styling - without badges or pointer */
+.auto-slider {
+  position: relative;
+}
+
+/* Remove all auto-slider variant badges */
+.about-interest-item:nth-of-type(1) .auto-slider::after,
+.about-interest-item:nth-of-type(2) .auto-slider::after,
+.about-interest-item:nth-of-type(3) .auto-slider::after,
+.about-interest-item:nth-of-type(4) .auto-slider::after,
+.about-interest-item:nth-of-type(5) .auto-slider::after,
+.about-interest-item:nth-of-type(6) .auto-slider::after {
+  display: none;
+}
+
+
+
