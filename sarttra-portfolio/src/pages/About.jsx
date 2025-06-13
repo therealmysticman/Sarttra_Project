@@ -87,45 +87,7 @@ const About = () => {
   });
 
   // Define interest slider content
-  const interestSliders = {
-    it: [
-      { id: 'react', image: reactTSlider },
-      {id: 'chatgpt', image: chatgptTSlider},
-      {id: 'flutter', image: flutterTSlider},
-      {id: 'figma', image: figmaTSlider}
-      // Add more IT images here
-    ],
   
-    manga: [
-      { id: 'mha', image: mhaMSlider },
-      { id: 'chainsaw', image: chainsawMSlider },
-      { id: 'oshi', image: oshiMSlider },
-      { id: 'fireforce', image: fireforceMSlider }
-      // Add more Manga images here
-    ],
-    game: [
-      { id: 'silenthillf', image: silenthillfGSlider },
-      {id: 'starrail', image: starrailGSlider},
-      {id: 'valorant', image: valorantGSlider},
-      {id: 'Repo', image: repoGSlider}
-      // Add Game images here
-    ],
-    vtuber: [
-      { id: 'suisei', image: suiseiVSlider },
-      {id: 'zona', image: zonaVSlider},
-      {id: 'kyo', image: kyoVSlider},
-      { id: 'raden', image: radenVSlider }
-      // Add more Vtuber images here
-    ],
-    jpop: [
-      { id: 'ado', image: adoJSlider },
-      { id: 'natori', image: natoriJSlider },
-      {id: 'kyojpop', image: kyoJpopSlider},
-      {id: 'lalalalove', image: lalalaloveJSlider}
-      // Add more J-POP images here
-    ]
-  };
-
   useEffect(() => {
     window.scrollTo(0, 0);
 
